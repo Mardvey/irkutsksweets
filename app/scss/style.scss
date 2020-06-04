@@ -4,4 +4,59 @@
 
 // start header
 
+.header{
+  background-color: $header;
+  // max-width: 1920px;
+  height: 321px;
+  background-image: url(../images/header/siti.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  // background-size: cover;
+  width: 100%;
+  margin: auto;
+  // border-bottom: 3px solid #b9756c;
+  &__line{
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    color: $text;
+    font-size: 36px;
+    padding-top: 40px;
+    &-work{
+      margin-left: 37px;
+    }
+    &-phone{
+      margin-right: 37px;
+      a{
+        color: $text;
+      }
+    }
+  }
+  &__logo{
+    margin: auto;
+    max-width: 473px;
+    height: 190px;
+    margin: 0 auto;
+    img{
+      margin-top: -8px;
+    }
+  }
+}
+// .header__down{
+//   width: 100%;
+//   height: 90px;
+//   border-bottom: 3px solid #b9756c;
+// }
+
+
+
+
+
+
+
+
+
+
 @import 'media';
+
+

@@ -2,6 +2,11 @@
 @import 'global';
 @import 'fonts';
 
+
+
+
+
+
 // start header
 .header__top{
   background-color: $header;
@@ -10,14 +15,15 @@
   background-position: bottom;
   background-repeat: no-repeat;
   width: 100%;
-  margin: auto;
+  background-size: contain;
 }
 .header__line{
   display: flex;
   justify-content: space-between;
   height: 75px;
   color: $text;
-  font-size: 36px;
+  // font-size: 36px;
+  font-size: calc(22px + 14 * ((100vw - 860px) / (1920 - 860)));
   padding-top: 40px;
 }
 .header__work{
@@ -30,18 +36,19 @@
   }
 }
 .header__logo{
-  margin: auto;
-  max-width: 473px;
+  padding: 0px 30px;
   height: 190px;
-  margin: 0 auto;
+  width: 100%;
+  text-align: center;
   img{
     margin-top: -8px;
+    width: 100%;
   }
 }
 .header__menu{
   position: absolute;
   top: 321px;
-  height: 90px;
+  min-height: 90px;
   width: 100%;
   border-bottom: 3px solid $text;
   border-top: 3px solid $text;
@@ -53,13 +60,58 @@
 .menu__list{
   display: flex;
   justify-content: space-between;
+  // display: none;
+  // display: block;
   li{
-    font-size: 48px;
+    // font-size: 48px;
+    font-size: calc(19px + 29 * ((100vw - 320px) / (1920 - 320)));
     align-items: center;
+    font-family: "ElMessiri-Regular";
+    font-weight: 400;
     a{
       color: $menu;
     }
   }
+}
+
+
+
+.menu__btn{
+  width: 30px;
+  display: none;
+  // display: block;
+ 
+  &-row1,&-row2,&-row3{
+    width: 100%;
+    background-color: $text;
+    margin-bottom: 4px;
+    height: 3px;
+    border-radius: 5px;
+    transition: all 0.5s ease 0s;
+  }
+}
+.header__wrapper{
+  position: relative;
+}
+.menu__btn.active{
+  .menu__btn-row1{
+    transform: rotate(45deg);
+    position: relative;
+    top: 3px;
+    transition: all 0.5s ease 0s;
+  }
+  .menu__btn-row2{
+    display: none;
+  }
+  .menu__btn-row3{
+    transform: rotate(-45deg);
+    position: relative;
+    top: -4px;
+    transition: all 0.3s ease 0s;
+  }
+}
+.header__menu.active{
+  background-color: $background;
 }
 .header__menu.fixed {
   position:fixed;
@@ -75,12 +127,13 @@
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  margin-bottom: -5px;                                            
+  margin-bottom: -5px;                                     
 }
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 .slider__wrapper{
   height: 844px;
-  background-color: rgba(250, 250, 250, 0.25)
+  background-color: rgba(250, 250, 250, 0.25);
+  padding-right: 150px;
 }
 .slider__box{
   max-width: 803px;
@@ -88,18 +141,18 @@
   position: absolute;
   top: 159px;
   left: 164px;
-  margin-right: 164px;
+  // margin-right: 164px;
   background-color: rgba(250, 250, 250, 0.5);
   padding: 63px 53px 37px;
   &-title{
-    font-family: 'rosalinda';
+    font-family: "ElMessiri-Medium";
+    font-weight: 500;
     font-size: 100px;
     color: $menu;
     margin-bottom: 62px;
   }
   &-text{
-    font-family: 'nk170';
-    font-size: 72px;
+    font-size: 60px;
     color: $menu;
     width: 100%;
     max-width: 799px;
@@ -130,7 +183,8 @@
 // start section menu
 .menu{
   background-color: $background;
-  height: 708px;
+  padding-bottom: 50px;
+  
 }
 .menu__navslider{
   height: 137px;
@@ -146,9 +200,9 @@
   }
 }
 .menu__items{
-  font-size: 35px;
+  font-size: 28px;
   color: $menu;
-  padding: 0px 14px;
+  padding: 0px 16px;
   cursor: pointer;
   white-space: nowrap;
   position: relative;
@@ -160,11 +214,11 @@
 }
 
 .menu__mainslider{
-height: 469px;
+min-height: 469px;
 }
 .menu__item{
   position: relative;
-  height: 469px;
+  min-height: 469px;
   &-img{
     background-repeat: no-repeat;
     background-size: cover;
@@ -177,16 +231,16 @@ height: 469px;
   }
 }
 .menu__item-box{
-  max-width: 350px;
+  max-width: 354px;
   width: 31%;
   display: inline-block;
-  height: 469px;
   position: absolute;
   top: 0;
- margin-right: 5px;
+  margin-right: 5px;
 }
 .menu__item-title{
-  font-family: 'rosalinda';
+  font-family: "ElMessiri-Medium";
+  font-weight: 500;
   font-size: 60px;
   text-align: center;
   padding-top: 17px;
@@ -194,23 +248,23 @@ height: 469px;
   color: $menu;
 }
 .menu__item-text{
-  font-size: 36px;
+  font-size: 30px;
   color: $menu;
   text-align: center;
 }
-  .slick-slide.slick-current.slick-center{
-    .menu__items{
-      color: $text !important;
-      &::before{
-        content: '';
-        position: absolute;
-        bottom: 4px;
-        left: 0px;
-        width: 100%;
-        border-bottom: 2px solid $text;
-      }
+.slick-slide.slick-current.slick-center{
+  .menu__items{
+    color: $text !important;
+    &::before{
+      content: '';
+      position: absolute;
+      bottom: 4px;
+      left: 0px;
+      width: 100%;
+      border-bottom: 2px solid $text;
     }
   }
+}
 .slick-list.draggable{
   padding: 0 !important;
 
@@ -223,12 +277,14 @@ height: 469px;
 .partner{
   background-color: $background;
   padding-bottom: 47px;
+  padding-top: 50px;
   &__title{
     margin: 0 auto;
     color: $text;
     font-size: 60px;
     text-align: center;
     height: 70px;
+    
   }
   &__line{
     height: 222px;
@@ -249,6 +305,7 @@ height: 469px;
   height: 170px;
   background-position: center;
   background-repeat: no-repeat;
+  
 }
 
 // end section partner
@@ -257,23 +314,30 @@ height: 469px;
 .footer{
   background-color: $text;
   width: 100%;
-  min-height: 628px;
   background-image: url(../images/content/footer-siti.png);
   background-position: bottom;
   background-repeat: no-repeat;
   position: relative;
   padding-top: 49px;
+ 
 }
-
+.footer__down{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0px 20px 20px;
+}
 .footer__logo{
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
+  width: 410px;
+  img{
+    width: 100%;
+  }
 }
 .footer__social{
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
+  width: 365px;
+  display: flex;
+  justify-content: flex-end;
+  
   &-list{
     li{
       display: inline-block;
@@ -286,13 +350,16 @@ height: 469px;
 .footer__inner{
   display: flex;
   justify-content: space-between;
+  min-height: 410px;
+  
 }
 .footer__item{
- 
+padding-bottom: 20px;
+
 }
 .footer__item-title{
   a{
-    font-size: 48px;
+    font-size: 47px;
     color: $icons;
     padding-top: 6px;
     padding-bottom: 20px;
@@ -305,7 +372,7 @@ height: 469px;
 .footer__item-text{
   li{
     a{
-      font-size: 30px;
+      font-size: 25px;
       color: $icons;
       transition: all .5s;
       &:hover{

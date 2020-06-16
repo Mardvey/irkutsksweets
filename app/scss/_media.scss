@@ -1,3 +1,150 @@
-// @media(max-width: 1900px){
-
-// }
+@media(max-width: 1650px){
+  .header__line{
+    padding-top: 20px;
+  }
+  .header__logo{
+    img{
+      margin-top: 0;
+    }
+  }
+}
+@media(max-width: 1150px){
+  .partner{
+    display: none;
+  }
+}
+@media(max-width: 1100px){
+  .footer__inner{
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .footer__item{
+    max-width: 256px;
+    width: 100%;
+    text-align: center;
+  }
+  .slider__box{
+    left: 126px;
+    max-width: 687px;
+  }
+  .menu__item-title {
+    padding-top: 10px;
+    margin-bottom: 13px;
+  }
+}
+@media(max-width: 950px){
+  .header__line{
+    display: none;
+  }
+  .header__top {
+    height: 321px;
+  }
+  .header__logo{
+    img{
+      margin-top: 27px;
+    }
+  }
+  .slider{
+    display: none;
+  }
+  .menu{
+    padding-top: 70px;
+    z-index: 10;
+    padding-bottom: 10px;
+  }
+  .menu__item-box {
+    width: 100%;
+    padding: 10px 20px;
+    position: inherit;
+    min-width: 100%;
+  }
+  .menu__item-img {
+    width: 100%;
+    max-width: 100%;
+  }
+  .footer{
+    padding-top: 20px;
+  }
+}
+@media(max-width: 814px){
+  .footer__down{
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+  .footer__social {
+    justify-content: center;
+    padding: 30px 0px;
+    text-align: center;
+    img{
+      width: 80%;
+    }
+  }
+  .menu__navslider {
+    padding-top: 25px;
+  }
+}
+@media(max-width: 550px){
+  .menu__item-img {
+    height: 318px;
+  }
+  .menu__item-box {
+    padding: 10px 20px 10px;
+  }
+  .menu__item-title {
+    font-size: 47px;
+  }
+  .menu__item-text{
+    font-size: 27px;
+  }
+  .header__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .menu__btn{
+    display: block;
+    right: 6px;
+    padding: 10px 0px 10px 0px;
+    height: 100%;
+  }
+  .header__menu{
+    min-height: 60px;
+  }
+  .menu__list{
+    display: none;
+    width: 60%;
+    li{
+      padding: 10px 0px;
+    }
+  }
+  .menu__navslider {
+    padding-top: 0;
+  }
+}
+@media(max-width: 500px){
+  .header__top {
+    height: 250px;
+  }
+  .header__menu {
+    top: 250px;
+  }
+  .menu__items {
+    font-size: 25px;
+  }
+}
+@media(max-width: 400px){
+  .header__top {
+    height: 187px;
+  }
+  .header__menu {
+    top: 187px;
+  }
+  .footer__social {
+    img{
+      width: 72%;
+    }
+  }
+  .menu__item-img {
+    height: 240px;
+  }
+}

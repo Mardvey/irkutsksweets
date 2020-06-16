@@ -1,12 +1,22 @@
-@font-face{
-  font-family: 'nk170';
-  src: url('../fonts/nk170.woff2') format('.woff2'),
-       url('../fonts/nk170.woff') format('.woff');
-  font-weight: 400;     
+@font-face {
+  font-family: "ElMessiri-Regular";
+  src: url("../fonts/ElMessiri-Regular.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/ElMessiri-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/ElMessiri-Regular.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/ElMessiri-Regular.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/ElMessiri-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/ElMessiri-Regular.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/ElMessiri-Regular.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: 400;
 }
-@font-face{
-  font-family: 'rosalinda';
-  src: url('../fonts/rosalinda.woff2') format('.woff2'),
-       url('../fonts/rosalinda.woff') format('.woff');
-  font-weight: 400;     
+@font-face {
+  font-family: "ElMessiri-Medium";
+  src: url("../fonts/ElMessiri-Medium.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/ElMessiri-Medium.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/ElMessiri-Medium.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/ElMessiri-Medium.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/ElMessiri-Medium.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/ElMessiri-Medium.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/ElMessiri-Medium.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: 500;
 }

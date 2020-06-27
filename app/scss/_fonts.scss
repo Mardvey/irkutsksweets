@@ -20,3 +20,14 @@
     url("../fonts/ElMessiri-Medium.woff2") format("woff2"); /* Modern Browsers */
   font-weight: 500;
 }
+@font-face {
+  font-family: "Neucha";
+  src: url("./fonts/Neucha-Regular.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/Neucha-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/Neucha-Regular.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/Neucha-Regular.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/Neucha-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/Neucha-Regular.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/Neucha-Regular.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: 400;
+}

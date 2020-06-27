@@ -50,13 +50,33 @@
   .stocks__item{
     &-title{
       font-size: 55px;
+      margin-top: 45px;
     }
     &-subtitle {
       font-size: 38px;
-  
     }
     &-text{
       font-size: 25px;
+    }
+  }
+  .contacts{
+    a{
+      margin: 20px 0px;
+    }
+  }
+  .contacts__item{
+    margin-bottom: 50px;
+  }
+  .contacts__title{
+    font-size: 55px;
+  }
+  .contacts__text{
+    font-size: 25px;
+    margin-top: 24px;
+  }
+  .contacts__map{
+    iframe{
+      height: 444px; 
     }
   }  
   // .header__menu{
@@ -138,6 +158,19 @@
   .menu__navslider {
     padding-top: 0;
   }
+  .contacts__map{
+    iframe{
+      height: 344px; 
+    }
+  }
+  .contacts{
+    a{
+      span{
+        display: block;
+        padding: 10px 0px;
+      }
+    }
+  }  
 }
 @media(max-width: 500px){
   .header__top {
@@ -179,5 +212,10 @@
     &-text{
       font-size: 22px;
     }
-  }  
+  }
+  .contacts__map{
+    iframe{
+      height: 300px; 
+    }
+  }    
 }

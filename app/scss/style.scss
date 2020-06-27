@@ -394,7 +394,7 @@ padding-bottom: 20px;
   &-title{
     @include f500;
     font-size: 72px;
-    margin-top: 45px;
+    // margin-top: 45px;
   }
   &-subtitle{
     @include f400;
@@ -415,10 +415,36 @@ padding-bottom: 20px;
   }
 }
 
-
-
-
-
 // end section stocks
+// start section contacts
+.contacts{
+  color: $menu;
+  &__item{
+    margin-bottom: 80px;
+  }
+  a{
+    width: 100%;
+    color: $menu;
+    margin: 25px 0px;
+  }
+}
+.contacts__title{
+  @include f400;
+  font-size: 60px;
+}
+.contacts__text{
+  font-size: 32px;
+  @include f400;
+  margin: 45px 0px;
+}
+.contacts__map{
+  iframe{
+    width: 100%;
+    max-width: 1140px;
+    height: 544px; 
+  }
+}
+
+// end section contacts
 
 @import 'media';

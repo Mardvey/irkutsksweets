@@ -31,6 +31,9 @@
     padding-top: 10px;
     margin-bottom: 13px;
   }
+  .stocks{
+    padding-bottom: 0;
+  }
 }
 @media(max-width: 950px){
   .header__line{
@@ -44,6 +47,18 @@
       margin-top: 27px;
     }
   }
+  .stocks__item{
+    &-title{
+      font-size: 55px;
+    }
+    &-subtitle {
+      font-size: 38px;
+  
+    }
+    &-text{
+      font-size: 25px;
+    }
+  }  
   // .header__menu{
   //   background-color: $text 0.9;
   // }
@@ -150,4 +165,19 @@
   .menu__item-img {
     height: 240px;
   }
+  .stocks__item{
+    span{
+      font-size: 22px;
+    }
+    &-title{
+      font-size: 44px;
+    }
+    &-subtitle {
+      font-size: 33px;
+  
+    }
+    &-text{
+      font-size: 22px;
+    }
+  }  
 }

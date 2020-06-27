@@ -394,18 +394,19 @@ padding-bottom: 20px;
   &-title{
     @include f500;
     font-size: 72px;
+    margin-top: 45px;
   }
   &-subtitle{
-    @include f400N;
+    @include f400;
     font-size: 40px;
     padding-top: 13px;
     padding-bottom: 13px;
   }
 }
 .stocks__item-text{
-  padding: 30px 0px 45px;
+  padding-top: 30px;
   font-size: 28px;
-  @include f400N;
+  @include f400;
   div{
     padding-bottom: 50px;
   }
@@ -413,11 +414,6 @@ padding-bottom: 20px;
     margin-bottom: 60px;
   }
 }
-
-
-
-
-
 
 
 
